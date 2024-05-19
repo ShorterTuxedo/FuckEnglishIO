@@ -78,10 +78,11 @@ finished=False
 ct=0
 while ct<630 and not finished:
     print(ct, "seconds have elapsed.")
-    if keyboard.is_pressed('s') and (ct>=570 and ct<630):
+    if keyboard.is_pressed('s') and (ct<630):
         if (ct<570):
             print("You are not permitted to terminate your analysis.")
-        finished = True
+        else:
+            finished = True
     time.sleep(1)
     ct += 1
 if not finished:

@@ -146,7 +146,7 @@ for x in cDm.keys():
 critD=None
 while critD==None:
     try:
-        critD=int(input("Marks on criterion B?"))
+        critD=int(input("Marks on criterion D?"))
         critD= critD if (critD>=0 and critD<=10) else None
     except Exception:
         critD=None

@@ -50,7 +50,7 @@ def batch():
         print("When you have completed your answer, hold \"S\" on your keyboard for 2 seconds.")
         pastTime = time.time()
         finishedQuestion = False
-        while ct<300 or not finishedQuestion:
+        while ct<300 and not finishedQuestion:
                 if keyboard.is_pressed('s'):
                     finishedQuestion = True
                 time.sleep(1)

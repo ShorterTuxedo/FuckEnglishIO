@@ -15,6 +15,7 @@ def getXinRangeVars(X, rangeVars):
     return (isLast, myInd,myThresholds[myInd], rangeVars[myThresholds[myInd]], myThresholds)
 
 ###consts###
+reminderMode = True
 candidateName = "Joe Bloggs"
 PPronoun = "His"
 cCode = "job123"
@@ -77,8 +78,35 @@ engine.runAndWait()
 print("When you have finished, hold \"S\" on your keyboard for 2 seconds.")
 finished=False
 ct=0
+if reminderMode:
+    print("Reminder mode is on. It gives you as to when to start your sections of the IO.")
 while ct<630 and not finished:
     print(ct, "seconds have elapsed.")
+    if reminderMode:
+        if ct == 0:
+            print("We are at the 0 second mark. Please begin your introduction.")
+            engine.say("We are at the 0 second mark. Please begin your introduction.")
+            engine.runAndWait()
+        elif ct == 90:
+            print("We are currently at the 1 min 30 s mark. Please begin describing your extract in text A.")
+            engine.say("We are currently at the 1 minute 30 second mark. Please begin describing your extract in text A.")
+            engine.runAndWait()
+        elif ct == 210:
+            print("We are currently at the 3 min 30 s mark. Please begin describing the wider body of work of text A.")
+            engine.say("We are currently at the 3 minute 30 second mark. Please begin describing the wider body of work of text A.")
+            engine.runAndWait()
+        elif ct == 300:
+            print("We are currently at the 5 min mark. Please begin describing your extract in text B.")
+            engine.say("We are currently at the 5 minute mark. Please begin describing your extract in text B.")
+            engine.runAndWait()
+        elif ct == 420:
+            print("We are currently at the 7 min mark. Please begin describing the wider body of work of text B.")
+            engine.say("We are currently at the 7 minute mark. Please begin describing the wider body of work of text B.")
+            engine.runAndWait()
+        elif ct == 540:
+            print("We are currently at the 9 min mark. Please begin your conclusion.")
+            engine.say("We are currently at the 9 minute mark. Please begin your conclusion.")
+            engine.runAndWait()
     if keyboard.is_pressed('s') and (ct<630):
         if (ct<570):
             print("You are not permitted to terminate your analysis.")

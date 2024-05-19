@@ -70,7 +70,7 @@ def batch():
     engine.say("The discussion section is now complete.")
     engine.runAndWait()
 
-startingYap=f"The candidate name is {candidateName}. {PPronoun} candidate code is {cCode}. {candidateName}, you may now begin."
+startingYap=f"The candidate's name is {candidateName}. {PPronoun} candidate code is {cCode}. {candidateName}, you may now begin."
 print(startingYap)
 engine.say(startingYap)
 engine.runAndWait()

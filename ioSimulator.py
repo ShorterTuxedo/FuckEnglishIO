@@ -45,6 +45,7 @@ def batch():
     batch=random.sample(questions, batchSize)
     ct = 0
     for text in batch:
+        print(text)
         engine.say(text)
         engine.runAndWait()
         print("When you have completed your answer, hold \"S\" on your keyboard for 2 seconds.")

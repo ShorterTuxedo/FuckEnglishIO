@@ -108,7 +108,7 @@ gBound={"0":"1","7":"2","13":"3","19":"4","24":"5","29":"6","34":"7"}
 print("\n\n\n\n\n\nThank you. You may give marks on your own IO or ask a friend/teacher to help.")
 print("Marking Guide for Criterion A: ")
 for x in cAm.keys():
-    print((x if x == "0" else (str(x) + " - " + str(x + 1))), "Marks")
+    print((x if x == "0" else (str(x) + " - " + str(int(x) + 1))), "Marks")
     print(cAm[x])
 critA=None
 while critA==None:
@@ -119,7 +119,7 @@ while critA==None:
         critA=None
 print("\n\n\n\n\n\nMarking Guide for Criterion B: ")
 for x in cBm.keys():
-    print((x if x == "0" else (str(x) + " - " + str(x + 1))), "Marks")
+    print((x if x == "0" else (str(x) + " - " + str(int(x) + 1))), "Marks")
     print(cBm[x])
 critB=None
 while critB==None:
@@ -130,7 +130,7 @@ while critB==None:
         critB=None
 print("\n\n\n\n\n\nMarking Guide for Criterion C: ")
 for x in cCm.keys():
-    print((x if x == "0" else (str(x) + " - " + str(x + 1))), "Marks")
+    print((x if x == "0" else (str(x) + " - " + str(int(x) + 1))), "Marks")
     print(cCm[x])
 critC=None
 while critC==None:
@@ -141,7 +141,7 @@ while critC==None:
         critC=None
 print("\n\n\n\n\n\nMarking Guide for Criterion D: ")
 for x in cDm.keys():
-    print((x if x == "0" else (str(x) + " - " + str(x + 1))), "Marks")
+    print((x if x == "0" else (str(x) + " - " + str(int(x) + 1))), "Marks")
     print(cDm[x])
 critD=None
 while critD==None:

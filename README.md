@@ -5,7 +5,7 @@ A tool to help struggling and dying IB English A: Language and Literature SL stu
 This tool reads out the questions to help you prepare for your English IO. 
 
 To use it:
-- Edit "questionsList.txt" to add your IO questions.
+- Edit "questionList.txt" to add your IO questions.
 - Edit "ioSimulator.py" to change your name and registry keys for the TTS engine.
 - Install required dependencies.
 - Run "ioSimulator.py" to start a Mock IO.
